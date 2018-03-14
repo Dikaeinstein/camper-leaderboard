@@ -1,17 +1,19 @@
 language: node_js
 node_js:
-  - "stable"
+- stable
 cache:
   directories:
   - node_modules
 script:
-  - yarn run build
+- yarn run build
 deploy:
   provider: pages
   skip-cleanup: true
   local-dir: build
   keep-history: true
   target-branch: gh-pages
-  github-token: $github_token  # Set in travis-ci.org dashboard, marked secure
   on:
     branch: master
+env:
+  global:
+    secure: oYSfSXEGmo6eDs3zzmmAgXSmLdPCvTfFXWgdWHSU5Bpw8Vh3erv7kr6jeRvsLqPwPTslpcP3EE9vwJ0HtPpNsDHGevCvo7ilmle7E+5u4i5SXkjXK5YXhVf0NHX7m/uProEeSHhErKLMj4EDe1FXMmFGbKy/emXE6nCWlCDRhL9vsNAy69DADkkFSwKTITCWq7rECMdbzlOfDsO428CT7JFG0P+oG8U2a3e7oeIlzTalfWc6OqWIyR6zYePpj/shQmqHM73MqwepRi2at3UcQWoqPxkoLv5xsODFjWJYO6OX+oyT9bAE/QBkPImUV8ThPZAcNJGL62P0UWwC0ryfQCWz/hbXq68QI8SRg4rC6jFbEQ+PgjXmy1lB04OO+SJPN1W6TxpygN3dUG9TLawLC0Cq/HaSdRoSOy0czI4U1YjOnQ5c1+IFmAtQtEx01Y8COpQJanEokxEVCchMwO5fO5EBmyLKWO2r2B4EhSr4RBBhOzkrATuisdSFwbuiXO3AABBAWKpIWRSwhK5gMpuz4/WCpcrJ92/9lBigTjfAjyuI//rBw/VaikyfyGBpVZ/R+PBNY+A1RC6C3QSZADbfV4AZHZliBb7EKXESMNoM+qNI1CZs1T96VjmkzteKPvDC06tle2+Bf8HhnJMBxWtvl8D14ZjL/b/TzQagb9bG8GE=
