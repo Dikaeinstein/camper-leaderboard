@@ -9,9 +9,12 @@ To run locally:
 git clone https://github.com/Dikaeinstein/camper-leaderboard.git
 
 npm i   /* For npm */
+
 yarn install  /* For yarn */
 ```
 Then:
 ```
-yarn start    /* To start */
+yarn start    /* For yarn */
+
+npm start     /* For npm */
 ```
