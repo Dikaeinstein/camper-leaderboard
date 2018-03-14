@@ -25,6 +25,7 @@ const TableHead = (props) => {
           style={style}
         >
           Points in past 30 days
+          <span className="oi oi-sort-descending ml-1" />
         </th>
         <th
           scope="col"
@@ -32,6 +33,7 @@ const TableHead = (props) => {
           style={style}
         >
           All time points
+          <span className="oi oi-sort-descending ml-1" />
         </th>
       </tr>
     </thead>
